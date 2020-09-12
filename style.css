@@ -50,7 +50,7 @@ img {
 }
 .main div {
   border: 2px solid rgb(17, 15, 15);
-  width: fit-content;
+  width: 80%;
 }
 #main h1 {
   display: block;
@@ -458,6 +458,20 @@ img {
   font-size: 2rem;
   color: white;
   letter-spacing: 0.1rem;
+ }
+/*media query for small screen mobiles */
+@media (max-width:480px)
+{
+#main .main {    
+    padding: 0 40px 20px;
+  }
+  #main h1 {
+    font-size: 9vw;
+  }
+  .main div
+  {
+      width:100%;
+  }
 }
 /* media query for tablet */
 @media (min-width: 768px) {
