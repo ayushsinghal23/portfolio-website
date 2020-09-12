@@ -320,7 +320,7 @@ img {
   margin: 0 auto;
   border: 2px solid crimson;
   padding: 20px 30px;
-  width: 300px;
+  max-width: 300px;
 }
 #about .fonta :hover {
   color: white;
