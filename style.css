@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 * {
-  padding: 0%;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -165,7 +165,6 @@ img {
   flex-basis: 80%;
   display: flex;
   flex-direction: column;
-  padding: 30px;
   align-items: center;
   padding: 30px;
   border-radius: 10px;
@@ -280,9 +279,10 @@ img {
 #projects .card:hover .lowercard img {
   transform: scale(1.1);
 }
-/* ABOUT SECTION */
+/* -------------ABOUT SECTION------------------- */
 #about .about {
   height: fit-content;
+  display: flex;
   flex-direction: column-reverse;
   border: 3px solid blue;
 }
@@ -318,7 +318,7 @@ img {
   font-size: 2rem;
   margin: 0 auto;
   border: 2px solid crimson;
-  padding: 20px 30px;
+  padding: 15px 25px;
   max-width: 300px;
 }
 #about .fonta :hover {
@@ -329,25 +329,20 @@ img {
 }
 .about .col-left {
   /* border: 5px solid black; */
-
   margin-bottom: 50px;
 }
-.about .col-left img {
-  height: 100%;
-  width: 100%;
-}
+
 #about .about .col-left .font-img {
   padding: 0px;
   /* border: 15px solid white;*/
-  height: 100%;
-  width: 100%;
 }
 #about .about .col-left .my-image {
   height: fit-content;
   padding: 0px;
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 290px;
   position: relative;
+  left:20px;
   display: flex;
   border: 12px solid white;
 }
@@ -466,6 +461,7 @@ img {
 }
 /* media query for tablet */
 @media (min-width: 768px) {
+  /* main section */
   #main .cta {
     font-size: 2.5rem;
     padding: 15px 40px;
@@ -476,5 +472,71 @@ img {
   #main .main {
     padding: 0px 110px 20px;
   }
-}
-/* End od media query for tablet */
+  /*  end of main section */
+  /* heading of all sections */
+  .title {
+    font-size: 5rem;
+  }
+  /* services section */
+  #services .bottompart .cards {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  /* End of services section */
+  /* ------------------------------------------------------------------------------ */
+  /* Projects Section  */
+  /* #projects .cards-container {
+    flex-direction: row;
+  } */
+  #projects .projects .card {
+    height: 400px;
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    border-radius: 0;
+  }
+  #projects .projects .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #projects .lowercard {
+    height: 100%;
+  }
+  #projects .uppercard {
+    height: 100%;
+  }
+  /* End of projects section */
+  /* --------------------------------------- */
+  /* About me section */
+  #about .about {
+    flex-direction: row;
+  }
+  #about .about .col-right {
+      margin-left:30px;
+      padding:10px;
+    text-align: left;
+    text-align:justify;
+  }
+  #about .col-right h1 {
+    margin:0px 0px 20px;
+  }
+  .about .col-left {
+    /* border: 5px solid black; */
+
+    margin-bottom: 0px;
+    padding-left:60px;
+  }
+  #about .about .col-left .my-image
+  {
+      width:300px;
+      height:400px;
+      position: relative;
+      top:30px;
+  }
+  #about .about .col-left .my-image::after
+  {
+      border-width: 10px;
+  }
+
+  /* End of about me section  */
+
+/* End of media query for tablet */
