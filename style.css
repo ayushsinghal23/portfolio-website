@@ -46,11 +46,11 @@ img {
 #main .main {
   max-width: 1400px;
   margin: 0px auto;
-  padding: 0 90px 20px;
+  padding: 0 60px 20px;
 }
 .main div {
   border: 2px solid rgb(17, 15, 15);
-  min-width: 350px;
+  width: fit-content;
 }
 #main h1 {
   display: block;
@@ -472,6 +472,9 @@ img {
   }
   #main h1 {
     font-size: 5rem;
+  }
+  #main .main {
+    padding: 0px 110px 20px;
   }
 }
 /* End od media query for tablet */
