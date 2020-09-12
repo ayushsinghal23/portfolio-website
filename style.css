@@ -309,7 +309,6 @@ img {
   color: BLACK;
   text-align: center;
   font-size: 2rem;
-  padding: 10px 30px;
 
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -328,31 +327,26 @@ img {
   background-color: crimson;
   transition: 0.5s ease;
 }
+.about .col-left {
+  /* border: 5px solid black; */
 
+  margin-bottom: 50px;
+}
 .about .col-left img {
   height: 100%;
   width: 100%;
-  padding: 0px;
-  margin: 0px;
-  outline-width: 0px;
-}
-#about .about .col-left {
-  padding: 0px;
-  margin: 0px;
-  /* border: 2px solid red; */
 }
 #about .about .col-left .font-img {
   padding: 0px;
-  /* border: 10px solid red; */
-  margin: 0px;
-  /* height: 100%; */
+  /* border: 15px solid white;*/
+  height: 100%;
   width: 100%;
 }
 #about .about .col-left .my-image {
   height: fit-content;
   padding: 0px;
-  margin-bottom: 25px;
-  width: 290px;
+  width: 200px;
+  height: 250px;
   position: relative;
   display: flex;
   border: 12px solid white;
@@ -360,11 +354,11 @@ img {
 #about .about .col-left .my-image::after {
   content: "";
   position: absolute;
-  left: -33px;
-  top: 20px;
+  left: -28px;
+  top: 15px;
   border: 7px solid crimson;
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 90%;
   z-index: -1;
 }
 /* Contact Section */
