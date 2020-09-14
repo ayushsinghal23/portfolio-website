@@ -68,7 +68,7 @@ img {
   justify-content: space-evenly;
   text-align: center;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
   background-color: rgb(31, 30, 31);
   overflow-x: hidden;
@@ -624,11 +624,42 @@ img {
 /*media query for small screen mobiles */
 @media (max-width: 480px) {
   #header .header .nav-bar .brand h1 {
+    color: white;
     font-size: 6vw;
+    display: block;
+    margin-left: 5%;
   }
   #header .hamburger {
     height: 40px;
     width: 40px;
+  }
+  #header .hamburger .bar {
+    width: 20px;
+    height: 2px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+  }
+  #header .hamburger .bar::after,
+  #header .hamburger .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s ease;
+    transition-property: top, bottom;
+    transition: 0.3s ease;
+  }
+  #header .hamburger .bar::after {
+    top: 8px;
+  }
+  #header .hamburger .bar::before {
+    bottom: 8px;
+  }
+  #header .header .nav-list ul {
+    min-height: 100vh;
   }
   #main .main {
     padding: 0 40px 20px;
