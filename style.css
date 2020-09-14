@@ -448,20 +448,20 @@ img {
 /* -------------ABOUT SECTION------------------- */
 #about {
   min-height: 100vh;
-  border: 7px solid black;
+  /* border: 7px solid black; */
 }
 #about .about {
   min-height: 100vh;
   display: flex;
   flex-direction: row-reverse;
-  border: 9px solid blue;
+  /* border: 9px solid blue; */
 }
 #about .about .col-right {
   padding: 10px 5%;
   text-align: center;
   margin: 100px 0px 50px;
   max-width: 700px;
-  border: 7px solid green;
+  /* border: 7px solid green; */
   margin-bottom: 30px;
 }
 .about .col-right h2 {
