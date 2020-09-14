@@ -68,7 +68,7 @@ img {
   justify-content: space-evenly;
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background-color: rgb(31, 30, 31);
   overflow-x: hidden;
