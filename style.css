@@ -915,10 +915,14 @@ img {
 @media (max-width: 767px) {
   #about {
     height: fit-content;
+    padding: 0px 0px 100px;
   }
   #about .about {
     display: flex;
     flex-direction: column-reverse;
     height: fit-content;
+  }
+  #about .about .col-right {
+    margin: 0px 0px 30px;
   }
 }
