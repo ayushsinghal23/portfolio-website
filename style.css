@@ -42,7 +42,7 @@ img {
   height: 100%;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 20px;
   /* border: 4px SOLID RED; */
 }
 #header .header .nav-bar .brand {
@@ -626,6 +626,9 @@ img {
 }
 /*media query for small screen mobiles */
 @media (max-width: 480px) {
+  #header .header .nav-bar {
+    padding: 30px;
+  }
   #header .header .nav-bar .brand h1 {
     color: white;
     font-size: 6vw;
