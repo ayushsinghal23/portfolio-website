@@ -624,10 +624,11 @@ img {
 /*media query for small screen mobiles */
 @media (max-width: 480px) {
   #header .header .nav-bar .brand h1 {
-    color: white;
     font-size: 6vw;
-    display: block;
-    margin-left: 5%;
+  }
+  #header .hamburger {
+    height: 40px;
+    width: 40px;
   }
   #main .main {
     padding: 0 40px 20px;
