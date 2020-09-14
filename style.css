@@ -19,7 +19,7 @@ img {
 }
 /* header section */
 #header {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   position: fixed;
   height: fit-content;
@@ -31,7 +31,7 @@ img {
   top: 0;
   left: 0;
   height: auto;
-  /* background-color: rgba(0, 0, 0, 0.315); */
+  background-color: rgba(0, 0, 0, 0.315);
   transition: 0.3s background-color ease;
 }
 #header .header .nav-bar {
@@ -43,7 +43,7 @@ img {
   max-width: 1450px;
   margin: 0 auto;
   padding: 0 10px;
-  border: 4px SOLID RED;
+  /* border: 4px SOLID RED; */
 }
 #header .header .nav-bar .brand {
   width: 330px;
@@ -190,7 +190,7 @@ img {
 .common {
   width: 100%;
   height: 100vh;
-  border: 2px solid rgb(76, 0, 255);
+  /* border: 2px solid rgb(76, 0, 255); */
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -201,7 +201,7 @@ img {
   padding: 0 60px 20px;
 }
 .main div {
-  border: 2px solid rgb(17, 15, 15);
+  /* border: 2px solid rgb(17, 15, 15); */
   width: 80%;
 }
 #main h1 {
@@ -295,7 +295,7 @@ img {
 }
 #services .services .upperpart {
   max-width: 800px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   margin-bottom: 20px;
 }
 #services .services .upperpart p {
@@ -318,7 +318,7 @@ img {
 }
 
 #services .bottompart {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,7 +359,7 @@ img {
   z-index: -1;
 }
 #services .bottompart .icon {
-  border: 2px solid yellowgreen;
+  /* border: 2px solid yellowgreen; */
   height: 100px;
   width: 100px;
   margin-bottom: 20px;
@@ -450,14 +450,14 @@ img {
   height: 100vh;
   display: flex;
   flex-direction: column-reverse;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 #about .about .col-right {
   padding: 10px 5%;
   text-align: center;
   margin: 100px 0px 50px;
   max-width: 700px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: auto;
   margin-bottom: 30px;
 }
@@ -522,18 +522,17 @@ img {
   width: 90%;
   z-index: -1;
 }
-/* Contact Section */
+/*------------------------------------ Contact Section------------------------------- */
 #contact {
   height: fit-content;
-  border: 4px solid orange;
+  /* border: 4px solid orange; */
 }
 #contact .contact {
   display: flex;
-  border: 6px solid red;
+  /* border: 6px solid red; */
   flex-direction: column;
 }
 #contact .contact .contact-items {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -575,7 +574,7 @@ img {
 #footer {
   height: fit-content;
   background: linear-gradient(60deg, #021a35, #203449);
-  border: 4px solid red;
+  /* border: 4px solid red; */
 }
 #footer .footer-container {
   display: flex;
@@ -604,9 +603,6 @@ img {
   filter: grayscale(0);
 }
 
-/* #footer .footer-container .social-icons img:hover {
-} */
-
 #footer .footer-container .name h1 {
   font-size: 4rem;
   letter-spacing: 0.3rem;
@@ -627,6 +623,12 @@ img {
 }
 /*media query for small screen mobiles */
 @media (max-width: 480px) {
+  #header .header .nav-bar .brand h1 {
+    color: white;
+    font-size: 6vw;
+    display: block;
+    margin-left: 5%;
+  }
   #main .main {
     padding: 0 40px 20px;
   }
@@ -635,6 +637,9 @@ img {
   }
   .main div {
     width: 100%;
+  }
+  #footer .footer-container .name h1 {
+    font-size: 6vw;
   }
 }
 /* media query for tablet */
@@ -745,7 +750,6 @@ img {
   #contact .contact .contact-items {
     display: flex;
     flex-direction: row;
-    border: 2px solid green;
     width: 98%;
     margin-top: 20px;
   }
@@ -795,7 +799,6 @@ img {
   }
   /* Services section */
   #services .bottompart {
-    border: 2px solid blue;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -850,7 +853,6 @@ img {
   #contact .contact .contact-items {
     display: flex;
     /* flex-direction: row; */
-    border: 2px solid green;
     width: 98%;
     margin-top: 20px;
   }
