@@ -42,7 +42,7 @@ img {
   height: 100%;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 20px 20px;
   /* border: 4px SOLID RED; */
 }
 #header .header .nav-bar .brand {
