@@ -441,7 +441,6 @@ img {
 #projects .card .lowercard img {
   transition: 0.5s ease transform;
 }
-
 #projects .card:hover .lowercard img {
   transform: scale(1.1);
 }
