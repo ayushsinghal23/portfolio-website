@@ -13,7 +13,7 @@ hamburger.addEventListener("click", () => {
 });
 document.addEventListener("scroll", () => {
   var scrolledlength = window.scrollY;
-  if (scrolledlength > 300) {
+  if (scrolledlength > 150) {
     header.style.backgroundColor = "#29323c";
   } else {
     header.style.backgroundColor = "transparent";
